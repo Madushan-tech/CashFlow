@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#101922" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>CashFlow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Manrope', 'sans-serif'],
+            },
+            colors: {
+              background: {
+                light: '#F3F4F6',
+                dark: '#101922',
+              },
+              card: {
+                light: '#FFFFFF',
+                dark: '#1A222C',
+              },
+              primary: '#258cf4',
+              expense: '#EF4444',
+              income: '#258cf4',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+      /* Remove Recharts Focus Outline - Aggressive Override */
+      .recharts-wrapper { outline: none !important; }
+      .recharts-wrapper * { outline: none !important; }
+      .recharts-surface { outline: none !important; }
+      .recharts-layer { outline: none !important; }
+      
+      /* Remove tap highlight on mobile */
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^0.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-200 antialiased selection:bg-primary selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

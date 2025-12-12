@@ -1,0 +1,5 @@
+{
+  "name": "CashFlow",
+  "description": "A modern, minimalistic expense tracking application featuring category management, statistical analysis, and data export capabilities.",
+  "requestFramePermissions": []
+}
