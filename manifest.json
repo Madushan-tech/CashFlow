@@ -1,0 +1,16 @@
+{
+  "name": "CashFlow PWA",
+  "short_name": "CashFlow",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#101922",
+  "theme_color": "#101922",
+  "description": "A modern, minimalist expense tracker with cash, salary, and savings management.",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ]
+}

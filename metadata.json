@@ -1,0 +1,5 @@
+{
+  "name": "CashFlow PWA",
+  "description": "A modern, minimalist expense tracker with cash, salary, and savings management.",
+  "requestFramePermissions": []
+}
