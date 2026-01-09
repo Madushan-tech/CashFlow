@@ -2,7 +2,6 @@ const CACHE_NAME = 'cashflow-v2';
 const URLS_TO_CACHE = [
   './',
   './index.html',
-  './index.tsx',
   './icon.svg',
   './manifest.json',
   'https://cdn.tailwindcss.com',
@@ -57,6 +56,7 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME)
             .then((cache) => {
               // Only cache http/https requests (skip chrome-extension:// etc)
+              // And avoid caching specific build artifacts unless strictly necessary to avoid bloating
               if (event.request.url.startsWith('http')) {
                   cache.put(event.request, responseToCache);
               }
